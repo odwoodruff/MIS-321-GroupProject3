@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert Repository - BIO-Isaac - Cyber Biosecurity Alert Platform</title>
+    <link rel="stylesheet" href="../../wwwroot/css/site.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>BIO-Isaac</h1>
+                <span class="subtitle">Bio-ISAC Alert Platform</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="Index_Preview.html" class="nav-link">Dashboard</a></li>
+                <li><a href="SectorFilters_Preview.html" class="nav-link">Sector Filters</a></li>
+                <li><a href="AlertRepository_Preview.html" class="nav-link">Alert Repository</a></li>
+                <li><a href="AdminReviewTools_Preview.html" class="nav-link">Admin Review Tools</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="repository-container">
+            <h2>Alert Repository</h2>
+            <p>Browse and search all cyber biosecurity alerts</p>
+            
+            <div class="search-section">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search alerts by title, description, or tags...">
+                <button id="searchBtn" class="btn-primary">Search</button>
+            </div>
+
+            <div id="repositoryAlerts" class="repository-alerts">
+                <div class="repository-header">
+                    <h3>Total Alerts: 6</h3>
+                </div>
+                <div class="alert-feed">
+                    <div class="alert-card high">
+                        <div class="alert-header">
+                            <div>
+                                <div class="alert-title">[ID: 1] Ransomware Attack on Agricultural Data Systems</div>
+                                <div class="alert-meta">
+                                    <span><strong>ID:</strong> 1</span>
+                                    <span><strong>Sector:</strong> Agriculture</span>
+                                    <span><strong>Severity:</strong> High</span>
+                                    <span><strong>Source:</strong> CISA</span>
+                                    <span><strong>Date:</strong> 2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert-description">Multiple agricultural facilities reported ransomware attacks targeting crop management systems.</div>
+                        <div class="alert-tags">
+                            <span class="tag priority">Ransomware</span>
+                            <span class="tag">Data Breach</span>
+                            <span class="tag">Critical</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 BIO-Isaac - Bio-ISAC Member Organizations</p>
+    </footer>
+
+    <script src="../../wwwroot/js/site.js"></script>
+    <script src="../../wwwroot/js/alertRepository.js"></script>
+</body>
+</html>
+

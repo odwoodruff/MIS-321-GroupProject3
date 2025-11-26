@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sector Filters - BIO-Isaac - Cyber Biosecurity Alert Platform</title>
+    <link rel="stylesheet" href="../../wwwroot/css/site.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>BIO-Isaac</h1>
+                <span class="subtitle">Bio-ISAC Alert Platform</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="Index_Preview.html" class="nav-link">Dashboard</a></li>
+                <li><a href="SectorFilters_Preview.html" class="nav-link">Sector Filters</a></li>
+                <li><a href="AlertRepository_Preview.html" class="nav-link">Alert Repository</a></li>
+                <li><a href="AdminReviewTools_Preview.html" class="nav-link">Admin Review Tools</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="sector-filters-container">
+            <h2>Sector Filters</h2>
+            <p>Filter and view alerts by specific sectors</p>
+            
+            <div class="filter-controls">
+                <select id="sectorSelect" class="sector-select">
+                    <option value="All">All Sectors</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Hospitals">Hospitals</option>
+                    <option value="Pharma">Pharma</option>
+                </select>
+                <button id="applyFilter" class="btn-primary">Apply Filter</button>
+            </div>
+
+            <div id="filteredAlerts" class="filtered-alerts-container">
+                <div class="filter-results-header">
+                    <h3>Showing 2 alert(s) for Agriculture</h3>
+                </div>
+                <div class="alert-feed">
+                    <div class="alert-card high">
+                        <div class="alert-header">
+                            <div>
+                                <div class="alert-title">Ransomware Attack on Agricultural Data Systems</div>
+                                <div class="alert-meta">
+                                    <span><strong>Sector:</strong> Agriculture</span>
+                                    <span><strong>Severity:</strong> High</span>
+                                    <span><strong>Source:</strong> CISA</span>
+                                    <span><strong>Date:</strong> 2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert-description">Multiple agricultural facilities reported ransomware attacks targeting crop management systems.</div>
+                        <div class="alert-tags">
+                            <span class="tag priority">Ransomware</span>
+                            <span class="tag">Data Breach</span>
+                            <span class="tag">Critical</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 BIO-Isaac - Bio-ISAC Member Organizations</p>
+    </footer>
+
+    <script src="../../wwwroot/js/site.js"></script>
+    <script src="../../wwwroot/js/sectorFilters.js"></script>
+</body>
+</html>
+
