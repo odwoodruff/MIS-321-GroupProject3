@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sector Filters - BIO-Isaac - Cyber Biosecurity Alert Platform</title>
+    <title>Admin Review Tools - BIO-ISAC - Cyber Biosecurity Alert Platform</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
@@ -11,7 +11,7 @@
     <!-- Embedded Custom CSS -->
     <style>
 /* ============================================
-   BIO-Isaac Medical Platform Styling
+   BIO-ISAC Medical Platform Styling
    Medical-grade colors for Hospitals, Pharma, Agriculture, Labs
    ============================================ */
 
@@ -890,7 +890,7 @@ body {
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <h1><i class="bi bi-shield-check"></i> BIO-Isaac</h1>
+                <h1><i class="bi bi-shield-check"></i> BIO-ISAC</h1>
                 <span class="subtitle">Bio-ISAC Alert Platform</span>
             </div>
             <ul class="nav-menu">
@@ -903,31 +903,36 @@ body {
     </nav>
 
     <main class="main-content">
-<div class="sector-filters-container">
-    <h2><i class="bi bi-funnel"></i> Sector Filters</h2>
-    <p>Filter and view alerts by specific sectors</p>
+<div class="admin-container">
+    <h2><i class="bi bi-gear"></i> Admin Review Tools</h2>
+    <p>Administrative tools for reviewing and managing alerts</p>
     
-    <div class="filter-controls">
-        <select id="sectorSelect" class="sector-select">
-            <option value="All">All Sectors</option>
-            <option value="Agriculture">Agriculture</option>
-            <option value="Hospitals">Hospitals</option>
-            <option value="Pharma">Pharma</option>
-        </select>
-        <button id="applyFilter" class="btn-primary"><i class="bi bi-check-circle"></i> Apply Filter</button>
+    <div class="admin-actions">
+        <button id="refreshAlerts" class="btn-primary"><i class="bi bi-arrow-clockwise"></i> Refresh All Alerts</button>
+        <button id="exportAlerts" class="btn-secondary"><i class="bi bi-download"></i> Export Alerts</button>
     </div>
 
-    <div id="filteredAlerts" class="filtered-alerts-container">
-        <p class="loading"><i class="bi bi-info-circle"></i> Select a sector to view filtered alerts...</p>
+    <div class="admin-stats">
+        <h3><i class="bi bi-bar-chart"></i> System Statistics</h3>
+        <div id="adminStats" class="stats-grid">
+            <p class="loading"><i class="bi bi-arrow-repeat"></i> Loading statistics...</p>
+        </div>
+    </div>
+
+    <div class="admin-alerts">
+        <h3><i class="bi bi-list-ul"></i> All Alerts (Admin View)</h3>
+        <div id="adminAlerts" class="admin-alerts-list">
+            <p class="loading"><i class="bi bi-arrow-repeat"></i> Loading alerts...</p>
+        </div>
     </div>
 </div>
-<script src="/js/sectorFilters.js"></script>
+<script src="/js/adminTools.js"></script>
 
 
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 BIO-Isaac - Bio-ISAC Member Organizations</p>
+        <p>&copy; 2025 BIO-ISAC - Bio-ISAC Member Organizations</p>
     </footer>
 
     <!-- Bootstrap 5 JS Bundle -->

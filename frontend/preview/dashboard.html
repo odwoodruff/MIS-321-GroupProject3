@@ -1,5 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - BIO-ISAC - Cyber Biosecurity Alert Platform</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Embedded Custom CSS -->
+    <style>
 /* ============================================
-   BIO-Isaac Medical Platform Styling
+   BIO-ISAC Medical Platform Styling
    Medical-grade colors for Hospitals, Pharma, Agriculture, Labs
    ============================================ */
 
@@ -871,3 +883,86 @@ body {
         padding: 0;
     }
 }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1><i class="bi bi-shield-check"></i> BIO-ISAC</h1>
+                <span class="subtitle">Bio-ISAC Alert Platform</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html" class="nav-link"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+                <li><a href="sectorFilters.html" class="nav-link"><i class="bi bi-funnel"></i> Sector Filters</a></li>
+                <li><a href="alertRepository.html" class="nav-link"><i class="bi bi-archive"></i> Alert Repository</a></li>
+                <li><a href="adminReviewTools.html" class="nav-link"><i class="bi bi-gear"></i> Admin Review Tools</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+<div class="dashboard-container">
+    <h2><i class="bi bi-speedometer2"></i> Dashboard</h2>
+    
+    <div class="metrics-section">
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3><i class="bi bi-bell"></i> Total Alerts</h3>
+                <p class="metric-value" id="totalAlerts">-</p>
+            </div>
+            <div class="metric-card">
+                <h3><i class="bi bi-funnel-fill"></i> Filtered Alerts</h3>
+                <p class="metric-value" id="filteredAlerts">-</p>
+            </div>
+            <div class="metric-card agriculture">
+                <h3><i class="bi bi-flower1"></i> Agriculture</h3>
+                <p class="metric-value" id="agricultureAlerts">-</p>
+            </div>
+            <div class="metric-card hospitals">
+                <h3><i class="bi bi-hospital"></i> Hospitals</h3>
+                <p class="metric-value" id="hospitalAlerts">-</p>
+            </div>
+            <div class="metric-card pharma">
+                <h3><i class="bi bi-capsule"></i> Pharma</h3>
+                <p class="metric-value" id="pharmaAlerts">-</p>
+            </div>
+            <div class="metric-card">
+                <h3><i class="bi bi-grid"></i> Other</h3>
+                <p class="metric-value" id="otherAlerts">-</p>
+            </div>
+        </div>
+        <p class="last-updated"><i class="bi bi-clock"></i> Last Updated: <span id="lastUpdated">-</span></p>
+    </div>
+
+    <div class="filters-section">
+        <h3><i class="bi bi-funnel"></i> Sector Filters</h3>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-sector="All"><i class="bi bi-grid-3x3-gap"></i> All Sectors</button>
+            <button class="filter-btn" data-sector="Agriculture"><i class="bi bi-flower1"></i> Agriculture</button>
+            <button class="filter-btn" data-sector="Hospitals"><i class="bi bi-hospital"></i> Hospitals</button>
+            <button class="filter-btn" data-sector="Pharma"><i class="bi bi-capsule"></i> Pharma</button>
+        </div>
+    </div>
+
+    <div class="alerts-section">
+        <h3><i class="bi bi-bell-fill"></i> Alert Feed</h3>
+        <div id="alertFeed" class="alert-feed">
+            <p class="loading"><i class="bi bi-arrow-repeat"></i> Loading alerts...</p>
+        </div>
+    </div>
+</div>
+<script src="/js/dashboard.js"></script>
+
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 BIO-ISAC - Bio-ISAC Member Organizations</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

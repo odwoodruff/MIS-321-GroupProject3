@@ -45,5 +45,17 @@ public class HomeController : Controller
         var html = _htmlRenderer.RenderPage("adminReviewTools", "Admin Review Tools");
         return Content(html, "text/html");
     }
+
+    public IActionResult SecurityCheck()
+    {
+        var html = _htmlRenderer.RenderPage("securityCheck", "Security Check");
+        return Content(html, "text/html");
+    }
+
+    public IActionResult AdminPanel()
+    {
+        var html = _htmlRenderer.RenderPage("adminPanel", "Admin Panel");
+        return Content(html, "text/html");
+    }
 }
 
