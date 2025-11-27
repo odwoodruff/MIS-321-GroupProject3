@@ -4,20 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{TITLE}} - BIO-Isaac - Cyber Biosecurity Alert Platform</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/site.css" />
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <h1>BIO-Isaac</h1>
+                <h1><i class="bi bi-shield-check"></i> BIO-Isaac</h1>
                 <span class="subtitle">Bio-ISAC Alert Platform</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="/Home/Dashboard" class="nav-link">Dashboard</a></li>
-                <li><a href="/Home/SectorFilters" class="nav-link">Sector Filters</a></li>
-                <li><a href="/Home/AlertRepository" class="nav-link">Alert Repository</a></li>
-                <li><a href="/Home/AdminReviewTools" class="nav-link">Admin Review Tools</a></li>
+                <li><a href="/Home/Dashboard" class="nav-link"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+                <li><a href="/Home/SectorFilters" class="nav-link"><i class="bi bi-funnel"></i> Sector Filters</a></li>
+                <li><a href="/Home/AlertRepository" class="nav-link"><i class="bi bi-archive"></i> Alert Repository</a></li>
+                <li><a href="/Home/AdminReviewTools" class="nav-link"><i class="bi bi-gear"></i> Admin Review Tools</a></li>
             </ul>
         </div>
     </nav>
@@ -30,6 +35,8 @@
         <p>&copy; 2025 BIO-Isaac - Bio-ISAC Member Organizations</p>
     </footer>
 
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="/js/site.js"></script>
     {{SCRIPTS}}
 </body>

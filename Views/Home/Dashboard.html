@@ -1,50 +1,50 @@
 <div class="dashboard-container">
-    <h2>Dashboard</h2>
+    <h2><i class="bi bi-speedometer2"></i> Dashboard</h2>
     
     <div class="metrics-section">
         <div class="metrics-grid">
             <div class="metric-card">
-                <h3>Total Alerts</h3>
+                <h3><i class="bi bi-bell"></i> Total Alerts</h3>
                 <p class="metric-value" id="totalAlerts">-</p>
             </div>
             <div class="metric-card">
-                <h3>Filtered Alerts</h3>
+                <h3><i class="bi bi-funnel-fill"></i> Filtered Alerts</h3>
                 <p class="metric-value" id="filteredAlerts">-</p>
             </div>
-            <div class="metric-card">
-                <h3>Agriculture</h3>
+            <div class="metric-card agriculture">
+                <h3><i class="bi bi-flower1"></i> Agriculture</h3>
                 <p class="metric-value" id="agricultureAlerts">-</p>
             </div>
-            <div class="metric-card">
-                <h3>Hospitals</h3>
+            <div class="metric-card hospitals">
+                <h3><i class="bi bi-hospital"></i> Hospitals</h3>
                 <p class="metric-value" id="hospitalAlerts">-</p>
             </div>
-            <div class="metric-card">
-                <h3>Pharma</h3>
+            <div class="metric-card pharma">
+                <h3><i class="bi bi-capsule"></i> Pharma</h3>
                 <p class="metric-value" id="pharmaAlerts">-</p>
             </div>
             <div class="metric-card">
-                <h3>Other</h3>
+                <h3><i class="bi bi-grid"></i> Other</h3>
                 <p class="metric-value" id="otherAlerts">-</p>
             </div>
         </div>
-        <p class="last-updated">Last Updated: <span id="lastUpdated">-</span></p>
+        <p class="last-updated"><i class="bi bi-clock"></i> Last Updated: <span id="lastUpdated">-</span></p>
     </div>
 
     <div class="filters-section">
-        <h3>Sector Filters</h3>
+        <h3><i class="bi bi-funnel"></i> Sector Filters</h3>
         <div class="filter-buttons">
-            <button class="filter-btn active" data-sector="All">All Sectors</button>
-            <button class="filter-btn" data-sector="Agriculture">Agriculture</button>
-            <button class="filter-btn" data-sector="Hospitals">Hospitals</button>
-            <button class="filter-btn" data-sector="Pharma">Pharma</button>
+            <button class="filter-btn active" data-sector="All"><i class="bi bi-grid-3x3-gap"></i> All Sectors</button>
+            <button class="filter-btn" data-sector="Agriculture"><i class="bi bi-flower1"></i> Agriculture</button>
+            <button class="filter-btn" data-sector="Hospitals"><i class="bi bi-hospital"></i> Hospitals</button>
+            <button class="filter-btn" data-sector="Pharma"><i class="bi bi-capsule"></i> Pharma</button>
         </div>
     </div>
 
     <div class="alerts-section">
-        <h3>Alert Feed</h3>
+        <h3><i class="bi bi-bell-fill"></i> Alert Feed</h3>
         <div id="alertFeed" class="alert-feed">
-            <p class="loading">Loading alerts...</p>
+            <p class="loading"><i class="bi bi-arrow-repeat"></i> Loading alerts...</p>
         </div>
     </div>
 </div>
