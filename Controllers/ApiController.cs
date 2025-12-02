@@ -326,8 +326,3 @@ public class VerificationRequest
     public string Status { get; set; } = string.Empty;
 }
 
-public class UpdateStatusRequest
-{
-    public string Status { get; set; } = string.Empty;
-}
-

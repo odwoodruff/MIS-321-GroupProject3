@@ -1,6 +1,7 @@
 ﻿using MIS_GroupProject3.Services;
 using MIS_GroupProject3.Models;
 using MIS_GroupProject3.Filters;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,6 +45,15 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+// Serve static files from frontend folder
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new Microsoft.Extensions.FileProviders.PhysicalFileProvider(
+        Path.Combine(builder.Environment.ContentRootPath, "frontend")),
+    RequestPath = "/frontend"
+});
+
 app.UseCors();
 app.UseRouting();
 app.UseAuthorization();
